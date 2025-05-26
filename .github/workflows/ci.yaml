@@ -29,5 +29,6 @@ jobs:
         id: docker_build
         uses:  docker/build-push-action@v6
         with:
+          context: .
           push: false
           tags: jorginskn/fc2.0-ci-go:latest
